@@ -1,12 +1,13 @@
 # wallet_system_design
 
 #To run application instructions:
-1.cd server
-2.npm install
-3.nodemon server.js
-4.cd client
-5.npm install
-6.npm start
+
+1.cd server<br/>
+2.npm install<br/>
+3.nodemon server.js<br/>
+4.cd client<br/>
+5.npm install<br/>
+6.npm start<br/>
 
 # video explaining application deployed in heroku
 
