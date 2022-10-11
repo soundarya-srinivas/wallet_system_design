@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
+import ValidationComp from "./ValidationComp";
 
 const WalletSetup = () => {
   const [username, setusername] = useState("");
+  const [message, setmessage] = useState("");
   const [balance, setbalance] = useState(0);
   const navigate = useNavigate();
   const addWallet = () => {
+    if(username === ""){
+      setmessage("Please add username..!!");
+    }else {
     fetch("/setup", {
       method: "post",
       headers: {
@@ -22,6 +27,7 @@ const WalletSetup = () => {
         localStorage.setItem("walletId", data["_id"]);
         navigate("/");
       });
+    }
   };
   return (
     <div className="walletWrapper">
@@ -46,6 +52,7 @@ const WalletSetup = () => {
           onChange={(e) => setbalance(e.target.value)}
         ></input>
       </div>
+      {message ? <ValidationComp  msg={message} /> : ""}
       <button style={{ fontSize: "large" }} onClick={addWallet} type="submit">
         Add wallet
       </button>

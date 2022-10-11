@@ -182,7 +182,10 @@ table {
   padding-left: 100px;
   font-size: x-large;
 }
-
+.error{
+  color: red;
+  font-size: large;
+}
 /* media queries */
 
 @media only screen and (min-width: 1060px) and (max-width: 1440px) {
