@@ -1,6 +1,6 @@
 # wallet_system_design
 
-#To run application instructions:
+# To run application instructions:
 
 1.cd server<br/>
 2.npm install<br/>
@@ -8,6 +8,9 @@
 4.cd client<br/>
 5.npm install<br/>
 6.npm start<br/>
+
+# Deployed in heroku ->link :
+https://wallet-s.herokuapp.com/   
 
 # video explaining application deployed in heroku
 
